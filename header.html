@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>Car Plate Buy/Sell</title>
+    <!-- THESE ARE FONT-AWESOME, GOOGLE-FONT, BS-CSS, MAIN-CSS -->
+    <script src="https://kit.fontawesome.com/6685750968.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- THEST CSS FILE FOR THE HOME PAGE-->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- THIS FILE FOR THE CAR DETAILS PAGE-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.css">
+    <!-- THIS FILE FOR THE LOGIN/SIGNUP PAGE-->
+    <link rel="stylesheet" href="assets/css/passwordRulesHelper.min.css">
+    <!-- THIS FILE FOR THE USERDASHBOARD PAGE-->
+    <link rel="stylesheet" href="assets/css/fileUpload.css">
+
+
+</head>
+
+<body>
+
+    <!--===== Start Header Menu =====-->
+        
+        <!--Nav Menu Bar-->
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container p-md-0 ">
+                <!--Site Logo-->
+                <a class="navbar-brand site-logo" href="#"> <img class="img-fluid" alt="logo" src="assets/img/Logo.png">
+                </a>
+
+                <!--Main Header Menu-->
+                <ul class="nav navbar-nav align-items-center me-auto display-media">
+                        <li class="nav-item"> <a class="nav-link" href="license-plates.html"><img src="assets/img/emiratesnumber/credit-card.png" width="20px" class="align-bottom mx-1">License Plates</a> </li>
+
+                        <li class="nav-item"> <a class="nav-link" href="mobile-numbers.html"><img src="assets//img/emiratesnumber/dial-pad.png" width="14px" class="align-text-top mx-1">Mobile Numbers</a>
+                         </li>
+                       
+                        
+                            <li class="nav-item dropdown"> <a class="nav-link py-3 dropdown-toggle" href="#"><img src="assets//img/emiratesnumber/printer.png" width="14px" class="align-text-top mx-1">Print Out</a>
+                                <ul class="dropdown-menu  menu-item shadow p-0 rounded-5 row py-4" style="width: 200px; border: none">
+                                    <!--Dropdown Menu Item-->
+                                    <li class="nav-item"><a class="nav-link link-hover py-1 text-color3" href="plate-print.html">Licence Plate <i class="bi bi-printer"></i></a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link link-hover py-1 text-color3" href="number-print.html">Mobile Number <i class="bi bi-printer"></i></a></li>
+                            
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mx-1"> <a class="nav-link" href="priching.html"><img
+                                        src="assets//img/emiratesnumber/dollar.png" width="14px" class="align-text-top mx-1">Pricing</a>
+                            </li>
+                    <li class="nav-item dropdown mx-1"> <a class="nav-link py-3 dropdown-toggle"
+                            href="#"><img
+                                        src="assets//img/emiratesnumber/link.png" width="14px" class="align-text-top mx-1">More Links</a>
+                        <ul class="dropdown-menu menu-item shadow p-0 rounded-5 row py-2"
+                            style="width: 250px; border: none">
+                            <!--Dropdown Menu Item-->
+                            <li class="nav-item"><a class="nav-link link-hover py-2 text-color" href="about-us.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover py-2 text-color" href="terms-condtions.html">Terms & Conditions</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover py-2 text-color" href="privacy-policy.html">Privacy policy</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link-hover py-2 text-color" href="refund-pollicy.html">Refund policy</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover py-2 text-color" href="contact-us.html">Contact us</a></li>
+                          
+                        </ul>
+                    </li>
+             
+
+                </ul>
+
+            <!--Language Options-->
+          <ul class="nav px-4">
+            <li class="d-inline display-media"><i class="bi bi-translate"></i>
+                <select id="lang-select" class="dropdown bg-transparent fw-bold language  form-select-sm border-0 p-0">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </li>
+          </ul>
+
+
+                <!--Social Media Share-->
+            <ul class="nav mx-3 display-media">
+            
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img src="assets/img/emiratesnumber/instagram.png"
+                                target="blank" width="30"></a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+                                src="assets/img/emiratesnumber/facebook.png" target="blank" width="30"></a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+                            src="assets/img/emiratesnumber/snapchat.png" target="blank" width="30"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+                            src="assets/img/emiratesnumber/linkedin.png" target="blank" width="30"></a>
+                </li>
+           
+            </ul>
+
+                <!--Login/Signup Btn-->
+                <a href="#" class="register text-light bg-hover display-media fw-bold px-4 bg-dark btn">Sign Up</a>
+
+                <div class="dropdown profile">
+                    <a class="nav-item btn btn-outline-dark fw-bold  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hi, Anwar
+                    </a>
+                <!--Menu Item-->
+                    <ul class="dropdown-menu shadow p-0 rounded-5 border-0 mt-1  py-2" >
+                        <li class="nav-item"><a class="nav-link link-hover py-1 text-color" href="">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link link-hover py-1 text-color" href="">Change Password</a></li>
+                        <li class="nav-item"><a class="nav-link  link-hover py-1 " href="">Features ads</a>
+                        </li>
+
+                        <li class="nav-item border-top "><a class="px-3 mt-4 nav-lin py-1 fw-bold  text-color2" href="">Logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--OffCanvas Button-->
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> </button>
+
+                <!--=============Start OffCanvas Menu=============-->
+                <div class="offcanvas d-md-none d-block  offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom ">
+                        <h5 class="offcanvas-title text-color" id="offcanvasNavbarLabel"><b>Hi,</b> <span class="btn-color fw-bold">Anwar</span></h5>
+
+    <!--Social Media Share-->
+    <ul class="nav mx-3">
+    
+<li class="nav-item ">
+    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+            src="assets/img/emiratesnumber/instagram.png" target="blank" width="30"></a>
+</li>
+
+<li class="nav-item ">
+    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+            src="assets/img/emiratesnumber/facebook.png" target="blank" width="30"></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+            src="assets/img/emiratesnumber/snapchat.png" target="blank" width="30"></a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"><img
+            src="assets/img/emiratesnumber/linkedin.png" target="blank" width="30"></a>
+</li>
+    
+    </ul>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!--Site Main Mobile Header Menu-->
+<ul class="nav navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="license-plates.html"><img
+                src="assets/img/emiratesnumber/credit-card.png" width="20px" class="align-bottom mx-1">License
+            Plates</a> </li>
+
+    <li class="nav-item"><a class="nav-link" href="mobile-numbers.html"><img
+                src="assets//img/emiratesnumber/dial-pad.png" width="15px" class="align-text-top mx-1">Mobile
+            Numbers</a>
+    </li>
+
+    <li class="nav-item dropdown"> 
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false" href="#"><img
+                src="assets//img/emiratesnumber/printer.png" width="16px" class="align-text-top mx-1">Print Out</a>
+
+        <ul class="dropdown-menu fw-bold border-0 shadow p-0 rounded-5 py-2">
+            <!--Dropdown Menu Item-->
+            <li class="nav-item dropdown-item bg-white"><a class="nav-link link-hover py-1 text-color3" href="plate-print.html">Licence Plate <i
+                        class="bi bi-printer"></i></a>
+            </li>
+            <li class="nav-item dropdown-item bg-white"><a class="nav-link link-hover py-1 text-color3" href="number-print.html">Mobile Number
+                    <i class="bi bi-printer"></i></a></li>
+        </ul>
+    </li>
+
+
+    <li class="nav-item"><a class="nav-link" href="priching.html"><img src="assets//img/emiratesnumber/dollar.png"
+                width="16px" class="align-text-top mx-1">Pricing</a>
+    </li>
+
+<li class="nav-item"><a class="nav-link" href="about-us.html"> <img src="assets//img/emiratesnumber/info.png" width="16px" class="align-top mx-1">About Us</a></li>
+
+<li class="nav-item"><a class="nav-link" href="terms-condtions.html"><img src="assets//img/emiratesnumber/terms.png" width="16px" class="align-top mx-1">Terms &
+        Conditions</a></li>
+<li class="nav-item"><a class="nav-link py-2 text-color" href="privacy-policy.html"><img src="assets//img/emiratesnumber/policy.png" width="18px" class="align-top mx-1">Privacy
+        policy</a>
+</li>
+<li class="nav-item"><a class="nav-link py-2 text-color" href="refund-pollicy.html"><img src="assets//img/emiratesnumber/receipt.png" width="18px" class="align-top mx-1">Refund
+        policy</a></li>
+<li class="nav-item"><a class="nav-link py-2 text-color" href="contact-us.html"><img src="assets//img/emiratesnumber/contact-mail.png" width="20px" class="align-top mx-1">Contact us</a>
+</li>
+
+
+</ul>
+
+<!--Language Option-->
+                        <hr> <span class="me-3 fw-bold text-color">Language:</span>
+                        <div class="form-check my-2 form-check-inline">
+                            <input class="form-check-input" type="radio" value="en" name="lang" id="english" checked>
+                            <label class="form-check-label" for="english"> English </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="ar" name="lang" id="arabic">
+                            <label class="form-check-label" for="arabic">Arabic</label>
+                        </div>
+                
+
+
+                    </div>
+                </div>
+
+                <!--This is mobile Short menu-->
+                <div class="col toolbar fixed-bottom d-block d-md-none bg-light">
+                    <ul class="py-2 p-0 m-0 text-center">
+                        <li class="d-grid-inline px-2"> <i class="bi bi-grid-fill fs-5"></i> <a href="index.html"
+                                target="" class="text-color nav-link p-1 fw-bold mobile-icon">Home</a> </li>    
+                                
+                        <li class="d-grid-inline px-2"><i class="bi bi-window-dock fs-5"></i><a href="license-plates.html"
+                                class="text-color fw-bold  nav-link p-1 mobile-icon">Plates</a> </li>
+
+                        <li class="d-grid-inline px-3  border-3 rounded-3"><i class="bi bi-printer fs-5"></i> <a
+                                href="" target="" class="text-color fw-bold nav-link p-1 mobile-icon">
+                               Print-Out
+                            </a> </li>
+                        <li class="d-grid-inline px-2"> <i class="bi bi-phone-flip fs-5"></i> <a href="mobile-numbers.html"
+                                target="" class="text-color fw-bold nav-link p-1 mobile-icon">Number</a> </li>
+                        <li class="d-grid-inline px-2"> <i class="bi bi-person-check fs-5"></i> <a href="user-dashboard.html"
+                                target="" class="text-color fw-bold nav-link p-1 mobile-icon">Profile</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--===== End Header Menu =====-->
