@@ -1,0 +1,462 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--===== Start Car Details Section =====-->
+<section class="py-5 mt-5">
+    <div class="container py-4 mt-4 border-top border-4 border-danger  box-shadow rounded-5 ">
+        <div class="row g-0">
+            <div class="col-12 col-md-8">
+                <!--=========Main Content Start=========-->
+                <div class="row g-0">
+                    <div class="col-10">
+                        <h1 class="fs-4 card-title text-dark  m-0 px-1"> <i
+                                class="bi bi-three-dots-vertical text-color2"></i>Plate number <b>Ajman 4449</b></h1>
+                    </div>
+                    <div class="col-2 m-auto ">
+                        <!--===Report Listing=====--->
+                        <button class="btn btn-outline-danger p-1 fs-normal" data-bs-toggle="modal"
+                            data-bs-target="#report-listing"><i class="bi bi-flag-fill"></i> Report</button>
+                        <!-- Report Modal -->
+                        <div class="modal fade" id="report-listing" data-bs-backdrop="static" tabindex="-1"
+                            aria-hidden="true">
+                            <div class="modal-dialog" style="max-width: 700px!important;">
+                                <div class="modal-content">
+                                    <div dir="ltr" class="modal-header">
+                                        <div class="col-6 text-start ">
+                                            <h3 class="modal-title fs-5" id="exampleModalLabel">Report Listing</h3>
+                                        </div>
+                                        <div class="col-6 text-end ">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--====Report Form====-->
+                                        <form action="#" class="text-start">
+                                            <h5
+                                                class="text-center pb-2 mb-3 fs-6 border-bottom border-2  border-danger text-dark ">
+                                                Fill up the form</h5>
+                                            <div class="row g-4">
+                                                <!--Report Form Filed-->
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Name</label>
+                                                    <input type="text" class="form-control rounded-0 py-2"
+                                                        placeholder="Full name" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Contact Number</label>
+                                                    <input id="mobile_number" required
+                                                        class="form-control rounded-0 py-2" type="tel">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <input type="email" placeholder="Enter email"
+                                                        class="form-control rounded-0 py-2" required id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Select Query</label>
+                                                    <select class="form-select py-2">
+                                                        <option value="1">Customer Support</option>
+                                                        <option value="2" selected>Report Fake Listing</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="" class="form-label">Short Report</label>
+                                                    <textarea placeholder="Please detail your specific issue..."
+                                                        class="form-control rounded-0 " rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                            <!--Form Submit Button-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="submit"
+                                                    class="btn bg-dark text-light fw-bold  bg-hover  my-2 px-5">Submit<i
+                                                        class="bi bi-check-circle-fill mx-1"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===Report Listing=====--->
+                </div>
+                <!--Listing Canvas-->
+                <div class="card-img text-center py-5 "> <img src="assets/img/Plates-numbers/plate1.png"
+                        class="img-fluid " alt=""> </div>
+                <!--====Listing Overview====-->
+                <div class="listing-overview">
+                    <div class="row g-4  rounded-3  g-md-0 align-items-baseline bg-dark bg-opacity-10  py-3">
+                        <!--Seller Info-->
+                        <div class="col-md-4 px-3"> <i
+                                class="bi bi-person-check bg-color text-light rounded-circle p-2"></i> <span
+                                class="card-text">By Amir Hamza</span> <i class="bi bi-dot text-color2"></i> <span
+                                class="card-text">24-03-2023</span> </div>
+                        <div class="col-md-3 m-auto text-center ">
+                            <button class="btn p-2 p-md-1 bg-color text-light mt-3 mt-md-0 w-75 btn-sm">Download
+                                Canvas<i class="bi bi-images mx-1"></i></button>
+                        </div>
+                        <!--Social Share-->
+                        <div class="col-md-5">
+                            <ul class="nav align-items-center justify-content-center">
+                                <li class="nav-item mx-2"> <i
+                                        class="bi bi-share-fill border border rounded-circle  p-2 align-items-center text-color3   fs-5"></i>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link p-1 text-dark d-flex flex-column align-items-center"
+                                        href="#"><img src="assets/img/emiratesnumber/facebook2.png" target="blank"
+                                            width="30"></a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link p-1 text-dark d-flex flex-column align-items-center"
+                                        href="#"><img src="assets/img/emiratesnumber/linkedin2.png" target="blank"
+                                            width="30"></a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link p-1 text-dark d-flex flex-column align-items-center"
+                                        href="#"><img src="assets/img/emiratesnumber/whatsapp2.png" target="blank"
+                                            width="30"></a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link p-1 text-dark d-flex flex-column align-items-center"
+                                        href="#"><img src="assets/img/emiratesnumber/twitter2.png" target="blank"
+                                            width="30"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End Social Share-->
+                    </div>
+                    <!--Listing Details-->
+                    <div class="row g-4 pt-5">
+                        <h4 class="text-color fw-bold">AED 26,000</h4>
+                        <div class="col-md-6">
+                            <div class="card bg-info bg-opacity-10  border-0">
+                                <div class="row align-items-baseline  g-0">
+                                    <div class="col-2">
+                                        <div class="card-img"> <img src="assets/img/emiratesnumber/spare-parts.png"
+                                                class="img-fluid p-3"> </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body p-0">
+                                            <h5 class="card-text fw-bold text-color">Plate Number: <i
+                                                    class="bi bi-dash mx-4"></i></i><b>M 4449</b></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-info bg-opacity-10  border-0">
+                                <div class="row align-items-baseline  g-0">
+                                    <div class="col-2">
+                                        <div class="card-img"> <img src="assets/img/emiratesnumber/business-man.png"
+                                                class="img-fluid p-3"> </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body p-0">
+                                            <h5 class="card-text fw-bold text-color">Seller: <i
+                                                    class="bi bi-dash mx-4"></i><b>Amir Hamza</b></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-info bg-opacity-10 border-0">
+                                <div class="row align-items-baseline g-0">
+                                    <div class="col-2">
+                                        <div class="card-img"> <img src="assets/img/emiratesnumber/calendar.png"
+                                                class="img-fluid p-3"> </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body p-0">
+                                            <h5 class="card-text fw-bold text-color">Upload Date: <i
+                                                    class="bi bi-dash mx-4"></i><b>24 - 03 - 2023</b></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---Call to Action---->
+                        <div class="action-btn my-4 ">
+                            <ul class="nav d-flex flex-column pb-4">
+                                <li class=" nav-item fst-normal text-muted"> <i
+                                        class="bi bi-info-circle text-danger  mx-1"></i>Don’t wire money online</li>
+                                <li class="nav-item fst-normal text-muted"> <i
+                                        class="bi bi-info-circle text-danger  mx-1"></i>Meet the seller in person</li>
+                            </ul>
+                            <br> <a href="tel:5435435" class="btn phone-call text-light  btn-lg fs-6"><i
+                                    class="bi bi-telephone mx-1"></i> Call Seller</a> <span class="mx-3"></span> <a
+                                href=" https://wa.me/" class="btn text-light  whatsapp-btn btn-lg fs-6"><i
+                                    class="bi bi-whatsapp mx-1"></i> WhatsApp</a>
+                        </div>
+                        <hr>
+                        <!---========Simmiller Listing Slider===========-->
+                        <div class="related-listing py-2">
+                            <div class="row g-0 py-3">
+                                <div class="col-7">
+                                    <h3 class="text-color fw-bold fs-5 m-0">Similler <span
+                                            style="color: #fd4c48">Listing </span></h3>
+                                </div>
+                                <div class="col-5 text-center ">
+                                    <div dir="ltr">
+                                        <button class="releted-prev-btn btn bg-color px-3 text-light mx-2"><i
+                                                class="bi bi-arrow-left"></i></button>
+                                        <button class="releted-next-btn btn bg-color px-3 text-light mx-2"><i
+                                                class="bi bi-arrow-right "></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div dir="ltr" class="related-plates">
+                                <!--Licence Plate Item Start-->
+                                <div class="position-relative">
+                                    <div class="card m-1 mb-4 p-2 card-content">
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate1.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">3 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="card m-1 mb-4 p-2 card-content">
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate1.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">3 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="card m-1 mb-4 p-2 card-content">
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate1.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">3 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="card m-1 mb-4 p-2 card-content">
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate1.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">3 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <div class="card m-1 mb-4 p-2 card-content">
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate1.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary"> 3 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Listing Overview  End-->
+                </div>
+                <!--======Start Call To Action======-->
+                <div class="my-4 p-2 bg-dark  py-3 text-light rounded-5 ">
+                    <div class="row">
+                        <div class="col-md-8 p-4">
+                            <h2 class="fs-4">Print License Plate Number</h2>
+                            <p class="text-dark-50">We are the UAE #1 online license plates and mobile numbers website.
+                            </p> <a href="plate-print.html" class="btn bg-light bg-hover fw-bold">Print Number</a>
+                        </div>
+                        <div class="col-md-4 text-center "> <img src="assets/img/emiratesnumber/website-shots.webp"
+                                alt="" class="w-75"> </div>
+                    </div>
+                </div>
+                <!--======End Call To Action======-->
+            </div>
+            <!--=========End Main Content Start=========-->
+            <!--=================StartRight SideBar Content=====================-->
+            <div class="col-12 col-md-4 bg-ligh ">
+                <!--Sidebar-->
+                <div class="sidebar p-md-4 p-2">
+                    <!--Company Info-->
+                    <div class="card my-4"> <img src="assets/img/emiratesnumber/map-bg.webp" class="card-img" alt="...">
+                        <div class="card-img-overlay text-center p-3"> <img src="assets/img/logo.png" class="w-75 p-2 "
+                                alt="">
+                            <p class="card-text">We are proud to say that,<b
+                                    class="text-color2 mx-1">Emiratesnumber.ae</b> is the biggest website for license
+                                plates and mobile numbers in UAE.</p> <a href=""
+                                class="btn border border-danger  bg-hover fw-bold">Register Now</a>
+                        </div>
+                    </div>
+                    <!--Has Tag-->
+                    <div class="card my-4">
+                        <div class="card-body text-center p-3">
+                            <h4 class="card-title fs-5 fw-bold">Tags Clouds</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top w-25 " alt="">
+                            <ul class="navbar nav justify-content-center my-3">
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#DXB_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#AD_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#AD_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#Du-numbers</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#Etisalat-Numbers</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Short Link-->
+                    <div class="card my-4 ">
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fs-5 fw-bold ">Short Links</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top img- w-25 " alt="">
+                            <ol class="list-group list-group- list-group-flush my-4">
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">Mobile Numbers</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+60K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">License Plates</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+45K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">VIP Number</a> </div>
+                                    <span class="badge text-bg-primary bg-dark rounded-pill">+24K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">Purchase Orders</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+10K</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!--Recently User Join-->
+                    <div class="card my-4 ">
+                        <div class="card-body  text-center p-4">
+                            <h4 class="card-title fw-bold fs-5">Recently Join</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top m-auto text-center w-25"
+                                alt="">
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Anwar Ahmed</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 32
+                                                    minutes ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Jayed Khan</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 2
+                                                    days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Abid Khan</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 3
+                                                    days ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=================End Right SideBar Content=====================-->
+        </div>
+    </div>
+</section>
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->

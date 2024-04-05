@@ -1,0 +1,702 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--===== Search Result Banner =====-->
+<section id="number-search-result">
+    <div class="container py-5">
+        <div class="row">
+            <div class="py-5 text-center text-light">
+                <h3 class="fs-3 fw-bold"><span style="color: #fd4c48">Search Mobile </span> number in UAE</h3>
+                <p>Thousands of New mobile number for sale in UAE - Sell your number with EmiratesNumber, the
+                    UAE's most trusted marketplace</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=====End Search Result Banner =====-->
+<!--===== Start Search Reasult Bar =====-->
+<section>
+    <div class="container my-3">
+        <div class="row">
+            <!--=====Number Plate Search Bar=========-->
+            <div style="margin-top: -100px; border-top-width: 6px!important;"
+                class="col-auto position-relative bg-white   border-2 border border-danger rounded-5">
+                <form action="#">
+                    <!--Below Search Button-->
+                    <button type="submit"
+                        class="btn shadow search-btn bg-color text-white position-absolute start-50  top-100 translate-middle">Search
+                        Number <i class="bi bi-search"></i></button>
+                    <!--Top Search Button-->
+                    <div class="row mt-3 justify-content-center align-items-center ">
+                        <!--Input Field Item-->
+                        <div class="col-md-3 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-dark filter-label">Provider</label>
+                            <select class="form-select form-select-md py-2">
+                                <option value="all">All Carrier</option>
+                                <option value="1">Etisalat</option>
+                                <option value="2">Dubai</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3  position-relative ">
+                            <label class="text-dark filter-label">Similar</label>
+                            <input type="text" class="form-control py-2">
+                        </div>
+                        <div class="col-md-4 d-flex  justify-content-between">
+                            <div class="col-md-5 p-md-2 my-md-0 my-3 position-relative ">
+                                <label class="text-color filter-label-price">Min Price</label>
+                                <input type="number" placeholder="" min="" class="form-control py-2" />
+                            </div>
+                            <div class="col-1 m-auto text-center "><span>-</span></div>
+                            <div class="col-md-5 p-md-2 my-md-0 my-3 position-relative ">
+                                <label class="text-color filter-label-price">Max Price</label>
+                                <input type="number" max="" class="form-control  py-2" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3 position-relative  ">
+                            <label class="text-color filter-label">Code</label>
+                            <select class="form-select form-select-md py-2">
+                                <option>All code</option>
+                                <option value="">050</option>
+                                <option value="">052</option>
+                                <option value="">054</option>
+                                <option value="">055</option>
+                                <option value="">056</option>
+                            </select>
+                        </div>
+                        <!--End Input Field Item-->
+                    </div>
+                    <div class="row mb-4 bg-">
+                        <!--Checkbox Pattern Item-->
+                        <h4 class="fs-6 fw-bold ">Pattern</h4>
+                        <div dir="ltr" class="mobile-pattern">
+                            <div class="col px-1">
+                                <div
+                                    class="form-check form-check-inline border border-success my-1 my-md-0 p-2 rounded-3">
+                                    <input class="form-check-input m-0 " type="checkbox" id="pattern1" value="1">
+                                    <label class="form-check-label fs-normal mx-2" for="pattern1">Repeated (Min 3)
+                                    (ex:<span
+                                            class="text-danger">XXX</span>4567)</label>
+                                </div>
+                            </div>
+                            <div class="col px-1">
+                                <div
+                                    class="form-check form-check-inline border my-1 my-md-0 border-success p-2 rounded-3">
+                                    <input class="form-check-input m-0 " type="checkbox" id="pattern2" value="2">
+                                    <label class="form-check-label fs-normal mx-2" for="pattern2">Repeated (Min 4)
+                                        (ex:<span class="text-danger">XXXX</span>567)</label>
+                                </div>
+                            </div>
+                            <div class="col px-1">
+                                <div class="form-check form-check-inline border border-success my-1 my-md-0 p-2 rounded-3">
+                                    <input class="form-check-input m-0 " type="checkbox" id="pattern3" value="3">
+                                    <label class="form-check-label fs-normal mx-2" for="pattern3">Enclosed (ex:<span
+                                            class="text-danger">X</span>23456<span class="text-danger">X</span>) </label>
+                                </div>
+                            </div>
+                            <div class="col px-1">
+                                <div
+                                    class="form-check form-check-inline border my-1 my-md-0 border-success p-2 rounded-3">
+                                    <input class="form-check-input m-0 " type="checkbox" id="pattern4" value="4">
+                                    <label class="form-check-label fs-normal mx-2" for="pattern4">Supper Enclosed
+                                        (ex:<span class="text-danger">XY</span>345<span class="text-danger">YX</span>)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col px-1">
+                                <div
+                                    class="form-check form-check-inline border my-1 my-md-0 border-success p-2 rounded-3">
+                                    <input class="form-check-input m-0 " type="checkbox" id="pattern5" value="5">
+                                    <label class="form-check-label fs-normal mx-2" for="pattern5">Double Enclosed (ex:
+                                        <span class="text-danger">XX</span>567<span class="text-danger ">XX</span>) </label>
+                                </div>
+                            </div>
+                                <div class="col px-1">
+                                    <div class="form-check form-check-inline border my-1 my-md-0 border-success p-2 rounded-3">
+                                        <input class="form-check-input m-0 " type="checkbox" id="pattern6" value="6">
+                                        <label class="form-check-label fs-normal mx-2" for="pattern6">Readable from both sides (ex:
+                                            <span class="text-danger">XXZ</span>3<span class="text-danger ">XXZ</span>) </label>
+                                    </div>
+                                </div>
+                            <!--End Checkbox Pattern Item-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===== End Search Reasult Bar =====-->
+<!--===== Start Mobile Number Section =====-->
+<section>
+    <div class="container py-5 mt-4">
+        <div class="row">
+            <!--========Search Result Content========-->
+            <div class="col-md-9">
+                <!--This is the Search Result Desctiptin-->
+                <div class="row g-0 m-0 p-0 my-4 ">
+                    <div class="card-title border-bottom mt-3 mt-md-0">
+                        <h6 class="fw-bold text-color">Search Mobile Number in Dubai, UAE</h6>
+                        <p class="text-normal text-color">1,251 Mobile number printed and 118 Sold. We are the UAE #1
+                            online mobile numbers website. </p>
+                    </div>
+                    <div class="shorting d-flex align-content-end  justify-content-between">
+                        <h5 class="float-start fw-bold fs-5">Showing: <b class="text-color2">1020</b></h5>
+                        <select class="filter-shortin form-select  rounded-pill   form-select-sm float-end w-25">
+                            <option selected>Sort: Default</option>
+                            <option value="1">Featured</option>
+                            <option value="2">Daily (high to low)</option>
+                            <option value="3">Daily (low to high)</option>
+                        </select>
+                    </div>
+                </div>
+                <!--======Mobile Number Item Start=======-->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!--Mobile Number Loop-->
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                         <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png"
+                                    class="card-img-top" alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-2 card-content">
+                            <a href="#"><img class="card-img" src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                    alt=""></a>
+                            <div class="d-flex mt-2">
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                        <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card-body p-1">
+                                        <p class="mb-1"><small class="text-body-secondary">Updated: 1 days ago</small>
+                                        </p> <a href="mobile-details.html" class="card-link link-hover ">More details <i
+                                                class="bi bi-arrow-right-short align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+              
+                </div>
+                <!--======Mobile Number Item End=======-->
+                <!--Search Result Pagination-->
+                <div class="row">
+                    <div class="col-auto m-auto ">
+                        <nav class="mt-5">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous"> <span
+                                            aria-hidden="true">&laquo;</span> </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">....</a></li>
+                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next"> <span
+                                            aria-hidden="true">&raquo;</span> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--=================StartRight SideBar Content=====================-->
+            <div class="col-md-3">
+                <!--Sidebar-->
+                <div class="left-sidebar p-md-2">
+                    <!--Company Info-->
+                    <div class="card mb-4 mt-4 mt-md-0  pb-md-5"> <img src="assets/img/emiratesnumber/map-bg.webp"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay text-center p-3 "> <img src="assets/img/logo.png" class="w-75 p-2 "
+                                alt="">
+                            <p class="card-text">We are proud to say that,<b
+                                    class="text-color2 mx-1">Emiratesnumber.ae</b> is the biggest website for license
+                                plates and mobile numbers in UAE.</p> <a href=""
+                                class="btn border border-danger  bg-hover fw-bold">Register Now</a>
+                        </div>
+                    </div>
+                    <!--Has Tag-->
+                    <div class="card my-4">
+                        <div class="card-body text-center p-md-2 p-3">
+                            <h4 class="card-title fs-5 fw-bold">Tags Clouds</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top w-25 " alt="">
+                            <ul class="navbar nav justify-content-center my-3">
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#DXB_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#AD_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#AD_plates</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#Du-numbers</a> </li>
+                                <li class="nav-item border rounded-pill m-2"> <a class="nav-link p-1 px-2 link-hover"
+                                        href="#">#Etisalat-Numbers</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Short Link-->
+                    <div class="card my-4 ">
+                        <div class="card-body text-center p-md-2 p-3">
+                            <h4 class="card-title fs-5 fw-bold ">Short Links</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top img- w-25 " alt="">
+                            <ol class="list-group list-group- list-group-flush my-4">
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">Mobile Numbers</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+60K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">License Plates</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+45K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">VIP Number</a> </div>
+                                    <span class="badge text-bg-primary bg-dark rounded-pill">+24K</span>
+                                </li>
+                                <li class="list-group-item p-1 my-1 d-flex justify-content-between">
+                                    <div class="fw-bold"> <a class="text-color link-hover" href="">Purchase Orders</a>
+                                    </div> <span class="badge text-bg-primary bg-dark rounded-pill">+10K</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!--Recently User Join-->
+                    <div class="card my-4 ">
+                        <div class="card-body  text-center p-md-2 p-3">
+                            <h4 class="card-title fw-bold fs-5">Recently Join</h4> <img
+                                src="assets/img/emiratesnumber/wave.svg" class="card-img-top m-auto text-center w-25"
+                                alt="">
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Anwar Ahmed</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 32
+                                                    minutes
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Jayed Khan</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 2
+                                                    days
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card text-start border-danger my-3 px-3 p-1">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-2"> <img src="assets/img/emiratesnumber/new-user.png"
+                                            class="img-fluid " alt="..."> </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle ">Abid Khan</h6>
+                                            <p class="card-text"><small class="text-body-secondary text-mute">Joined 3
+                                                    days
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=================End Right SideBar Content=====================-->
+        </div>
+    </div>
+</section>
+<!--===== End  Latest Number Plate Section  =====-->
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->

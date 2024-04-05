@@ -1,0 +1,319 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--===== Search Result Banner =====-->
+<section id="number-search-result">
+    <div class="container py-3">
+        <div class="row">
+            <div class="py-5 text-center text-light">
+                <h3 class="fs-3 fw-bold"><span style="color: #fd4c48">Print Mobile </span> Number for the sell</h3>
+                <p>Thousands of New and used license number for sale in UAE - Sell your number with EmiratesNumber, the
+                    UAE's most trusted marketplace</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=====End Search Result Banner =====-->
+<!--=====Start Plate Number Print Section =====-->
+<section id="license-plate">
+    <div class="container py-5">
+        <h4 class="text-center fs-4 fw-bold pb-2">Batch Upload</h4>
+        <!-- ========== Multi Numbers Tab Start========= -->
+        <div class="row g-0 border-top border-3 border-danger p-2 py-5  p-md-4 rounded-5 box-shadow">
+            <form action="" class="">
+                <!--Listing Info-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="fw-bold fs-normal" for="number">Contact Number</label>
+                        <br>
+                        <input class="form-control py-3 border rounded-3" type="number" id="number"
+                            placeholder="+97 174753741"> <small class="text-color2"> *You can update mobile number from
+                            dashboard</small>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fw-bold fs-normal mt-3 mt-md-0 " for="info">More details</label>
+                        <br>
+                        <input class="form-control py-3 border rounded-3" type="text" id="info"
+                            placeholder="Add more info about your car plate">
+                    </div>
+                </div>
+                <!--Car Color Selection-->
+                <div class="pt-4 pb-2 bg-inf">
+                    <h6 class="fw-bold">Canvas Background</h6>
+                    <div class="number-selector">
+                        <input id="number-black" type="radio" name="number-color" value="black" />
+                        <label class="number-select black" for="number-black">Black</label>
+                        <input id="number-white" checked type="radio" name="number-color" value="white" />
+                        <label class="number-select white" for="number-white">White</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="multi-form">
+                    <!-- Car plate number Loop Item 1 -->
+                    <div class="row py-3 box-shadow2 rounded-5  my-3 g-0">
+                        <div class="col-md-3 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-dark filter-label">City</label>
+                            <select class="form-select form-select-md py-2">
+                                <option selected>Select</option>
+                                <option value="1">Abu Dhabi Old</option>
+                                <option value="2">Abu Dhabi New</option>
+                                <option value="3">Abu Dhabi Classic</option>
+                                <option value="4">Dubai Old</option>
+                                <option value="5">Dhabi New</option>
+                                <option value="6">ADhabi Classic</option>
+                                <option value="7">Sharjah</option>
+                                <option value="8">Ajman</option>
+                                <option value="9">Ajman-Black</option>
+                                <option value="10">Ajman-red</option>
+                                <option value="11">Green</option>
+                                <option value="12">Fujairah-New Plate</option>
+                                <option value="13">RAK Plate-No</option>
+                                <option value="14">Umm Al Quwain</option>
+                                <option value="15">Umm Al Quwain-Black</option>
+                                <option value="16">Umm Al Quwain-reb</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3  position-relative ">
+                            <label class="text-dark filter-label">Plate</label>
+                            <input type="text" class="form-control py-2">
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative  ">
+                            <label class="text-color filter-label">Code</label>
+                            <select class="form-select form-select-md py-2">
+                                <option value="1">?</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                                <option value="">D</option>
+                                <option value="">E</option>
+                                <option value="">F</option>
+                                <option value="">G</option>
+                                <option value="">H</option>
+                                <option value="">I</option>
+                                <option value="">J</option>
+                                <option value="">K</option>
+                                <option value="">L</option>
+                                <option value="">M</option>
+                                <option value="">O</option>
+                                <option value="">P</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-color filter-label">Price</label>
+                            <input type="number" placeholder="" min="" class="form-control py-2" />
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative  ">
+                            <label class="text-color filter-label">Sold</label>
+                            <select class="form-select form-select-md py-2">
+                                <option value="yes">Yes</option>
+                                <option selected value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--End Car plate number Loop Item 1 -->
+                    <!-- Car plate number Loop Item 2-->
+                    <div class="row py-2 shadow-sm border-success alert rounded-5  my-3 g-0" role="alert">
+                        <div class="text-end d-block d-md-none">
+                            <button type="button" class="btn-close fs-5 p-2" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-dark filter-label">City</label>
+                            <select class="form-select form-select-md py-2">
+                                <option selected>Select</option>
+                                <option value="1">Abu Dhabi Old</option>
+                                <option value="2">Abu Dhabi New</option>
+                                <option value="3">Abu Dhabi Classic</option>
+                                <option value="4">Dubai Old</option>
+                                <option value="5">Dhabi New</option>
+                                <option value="6">ADhabi Classic</option>
+                                <option value="7">Sharjah</option>
+                                <option value="8">Ajman</option>
+                                <option value="9">Ajman-Black</option>
+                                <option value="10">Ajman-red</option>
+                                <option value="11">Green</option>
+                                <option value="12">Fujairah-New Plate</option>
+                                <option value="13">RAK Plate-No</option>
+                                <option value="14">Umm Al Quwain</option>
+                                <option value="15">Umm Al Quwain-Black</option>
+                                <option value="16">Umm Al Quwain-reb</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3  position-relative ">
+                            <label class="text-dark filter-label">Plate</label>
+                            <input type="text" class="form-control py-2">
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative  ">
+                            <label class="text-color filter-label">Code</label>
+                            <select class="form-select form-select-md py-2">
+                                <option value="1">?</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                                <option value="">D</option>
+                                <option value="">E</option>
+                                <option value="">F</option>
+                                <option value="">G</option>
+                                <option value="">H</option>
+                                <option value="">I</option>
+                                <option value="">J</option>
+                                <option value="">K</option>
+                                <option value="">L</option>
+                                <option value="">M</option>
+                                <option value="">O</option>
+                                <option value="">P</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-color filter-label">Price</label>
+                            <input type="number" placeholder="" min="" class="form-control py-2" />
+                        </div>
+                        <div class="col-md-2 col-12 d-flex m-md-0 p-md-0">
+                            <div class="col-md-9 col-12 p-md-3 my-md-0 my-3 position-relative">
+                                <label class="text-color filter-label">Sold</label>
+                                <select class="form-select form-select-md py-2">
+                                    <option value="yes">Yes</option>
+                                    <option selected value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="col-3 d-none d-md-block align-content-center ">
+                                <div class="close-icon ">
+                                    <button type="button" class="btn-close fs-5 p-2" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Car plate number Loop Item 2-->
+                    <!-- Car plate number Loop Item 3-->
+                    <div class="row py-2 shadow-sm border-success alert rounded-5  my-3 g-0" role="alert">
+                        <div class="text-end d-block d-md-none">
+                            <button type="button" class="btn-close fs-5 p-2" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-dark filter-label">City</label>
+                            <select class="form-select form-select-md py-2">
+                                <option selected>Select</option>
+                                <option value="1">Abu Dhabi Old</option>
+                                <option value="2">Abu Dhabi New</option>
+                                <option value="3">Abu Dhabi Classic</option>
+                                <option value="4">Dubai Old</option>
+                                <option value="5">Dhabi New</option>
+                                <option value="6">ADhabi Classic</option>
+                                <option value="7">Sharjah</option>
+                                <option value="8">Ajman</option>
+                                <option value="9">Ajman-Black</option>
+                                <option value="10">Ajman-red</option>
+                                <option value="11">Green</option>
+                                <option value="12">Fujairah-New Plate</option>
+                                <option value="13">RAK Plate-No</option>
+                                <option value="14">Umm Al Quwain</option>
+                                <option value="15">Umm Al Quwain-Black</option>
+                                <option value="16">Umm Al Quwain-reb</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 p-md-3 my-md-0 my-3  position-relative ">
+                            <label class="text-dark filter-label">Plate</label>
+                            <input type="text" class="form-control py-2">
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative  ">
+                            <label class="text-color filter-label">Code</label>
+                            <select class="form-select form-select-md py-2">
+                                <option value="1">?</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                                <option value="">D</option>
+                                <option value="">E</option>
+                                <option value="">F</option>
+                                <option value="">G</option>
+                                <option value="">H</option>
+                                <option value="">I</option>
+                                <option value="">J</option>
+                                <option value="">K</option>
+                                <option value="">L</option>
+                                <option value="">M</option>
+                                <option value="">O</option>
+                                <option value="">P</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 p-md-3 my-md-0 my-3 position-relative ">
+                            <label class="text-color filter-label">Price</label>
+                            <input type="number" placeholder="" min="" class="form-control py-2" />
+                        </div>
+                        <div class="col-md-2 col-12 d-flex m-md-0 p-md-0">
+                            <div class="col-md-9 col-12 p-md-3 my-md-0 my-3 position-relative">
+                                <label class="text-color filter-label">Sold</label>
+                                <select class="form-select form-select-md py-2">
+                                    <option value="yes">Yes</option>
+                                    <option selected value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="col-3 d-none d-md-block align-content-center ">
+                                <div class="close-icon ">
+                                    <button type="button" class="btn-close fs-5 p-2" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Car plate number Loop Item 3 -->
+                </div>
+                <!--Add Now Button-->
+                <div class="text-end">
+                    <button class="btn bg-color bg-hover2 text-light py-2 px-3 shadow-sm rounded-3 fw-bold">Add New<i
+                            class="bi bi-plus-lg mx-1"></i></button>
+                </div>
+                <!-- ======HasTag section======= -->
+                <div class="col-md-7 col-12">
+                    <div class="hashtag-wrapper mt-3">
+                        <label class="fw-bold">Hash tag</label>
+                        <input class="form-control border py-2 rounded-2 input-tags" type="text-bg-danger " name="tags"
+                            data_role="tagsinput">
+                    </div>
+                    <div class="hastag-btn mt-3 col-12">
+                        <button id="btn1" class="border-0 bg-body btn-color px-1 get-tag"
+                            data-value="#DXB_plates">#DXB_plates</button>
+                        <button id="btn2" class="border-0 bg-body btn-color px-1 get-tag"
+                            data-value="#AD_plates">#AD_plates</button>
+                        <button id="btn3" class="border-0 bg-body btn-color px-1 get-tag"
+                            data-value="#AJM_plates">#AJM_plates</button>
+                    </div>
+                </div>
+                <!--Print Button Below-->
+                <div class="text-center my-3">
+                    <button type="submit" class="btn w-50 bg-color2 text-light p-10 bg-hover fw-bold ">Print<i
+                            class="bi bi-printer mx-1"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- ==========End Multi Numbers Tab========= -->
+    </div>
+</section>
+<!--=====End Plate Number Print Section =====-->
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->
